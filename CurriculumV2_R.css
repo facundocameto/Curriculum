@@ -1,9 +1,9 @@
 .right_pan
 {
-  display: none;
+  display: inline-grid;
   grid-template-columns: 20px auto;
   background-color: aliceblue;
-  width: 22%;
+  width: 0%;
   height: 700px;
   position: fixed;
   right: 0;
@@ -12,6 +12,7 @@
   margin: 0px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  transition: 0.8s;
 }
 .oc_tag
 {

@@ -15,16 +15,16 @@ function hideOrShow()
 {
   var hideable = document.getElementById("hideable");
   var hideable_2 = document.getElementById("hideable_2");
-  if (hideable.style.display == "none")
+  if (hideable_2.style.width == "0%")
   {
-    hideable.style.display = "flex";
-    hideable_2.style.display = "inline-grid";
+    setTimeout(function(){ hideable.style.display = "flex"; }, 800);
+    hideable_2.style.width = "22%";
 
   }
   else
   {
     hideable.style.display = "none";
-    hideable_2.style.display = "none";
+    hideable_2.style.width = "0%";
   }
 }
 tch_hideable.addEventListener("click", hideOrShow);
